@@ -1,0 +1,3 @@
+{application,ebitly}.
+{packages,[]}.
+{modules,[ebitly,ebitly_browser,ebitly_sup]}.
