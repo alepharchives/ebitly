@@ -1,0 +1,13 @@
+** this is the overview.doc file for the application 'itweet' **
+@author Fernando Benavides <fernando.benavides@inakanetworks.com>
+@version 1.0
+@reference Check the <a href="http://code.google.com/p/bitly-api/wiki/ApiDocumentation">Bit.ly API Docs</a>
+@title Access the Bit.ly API using ibrowse
+@doc
+== Overview ==
+<b>ebitly</b> is a wrapper over the Bit.ly API
+== Usage ==
+You can start the app using {@link ebitly:start/0} or include {@link ebitly_sup} in your supervisor
+tree. To use it, just use the functions on {@link ebitly}.
+== Limitations ==
+We've only implemented the v3/shorten method, because that's the only thing we needed by now.
