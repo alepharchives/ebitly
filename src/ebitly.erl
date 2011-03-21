@@ -34,7 +34,6 @@
 %% API (Global)
 %% ===================================================================
 %% @doc  Starts the application
-%% @spec start() -> ok | {error, term()}
 -spec start() -> ok | {error, term()}.
 start() -> application:start(ebitly).
 
@@ -42,7 +41,6 @@ start() -> application:start(ebitly).
 %% PUBLIC API
 %% ===================================================================
 %% @doc  For a long URL, <i>shorten/1</i> encodes a URL and returns a short one. 
-%% @spec shorten(string()) -> string()
 -spec shorten(string()) -> string().
 shorten(LongUrl) -> ebitly_browser:shorten(LongUrl).
 

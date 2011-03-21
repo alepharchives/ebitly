@@ -43,7 +43,6 @@
 start_link() ->
   gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
 
-%% @spec shorten(Url::string()) -> {ok, string()} | {error, term()}
 %% @doc  For a long URL, <i>shorten/1</i> encodes a URL and returns a short one.
 -spec shorten(string()) -> {ok, string()} | {error, term()}.
 shorten(LongUrl) ->
