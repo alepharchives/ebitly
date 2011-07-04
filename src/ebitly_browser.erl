@@ -69,7 +69,8 @@ init([]) ->
 handle_call(Request, From, State = #state{queue = Q}) ->
   case queue:is_empty(Q) of
     true ->
-      {ok, _TimerRef} = timer:send_after(?QUERY_INTERVAL, handle_req);
+      {ok, _TimerRef} = timer:send_after(?QUERY_INTERVAL, handle_req),
+      ok;
     false ->
       ok
   end,

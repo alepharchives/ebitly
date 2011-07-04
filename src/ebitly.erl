@@ -48,7 +48,7 @@ shorten(LongUrl) -> ebitly_browser:shorten(LongUrl).
 %% Application callbacks
 %% ===================================================================
 %% @hidden
--spec start(normal | {takeover, node()} | {failover, node()}, term()) -> {ok, pid()} | {error, term()}.
+-spec start(normal | {takeover, node()} | {failover, node()}, term()) -> {ok, pid()}.
 start(_StartType, _StartArgs) -> ebitly_sup:start_link().
 
 %% @hidden
